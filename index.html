@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HdM-Banking</title>
+
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Scanning -->
+    <link href="Scanning/css/style.css" rel="stylesheet">
+
+    <!-- Main jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- ASpanel -->
+    <link href="ASpanel-master/css/normalize.css" rel="stylesheet" />
+    <link href="ASpanel-master/css/toolbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
+    <link rel="stylesheet" href="ASpanel-master/css/pictofy.css">
+
+    <!-- onscreenKeyboard -->
+    <link rel="stylesheet" href="onscreenkeyboard-master/css/jsKeyboard.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="onscreenkeyboard-master/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+<body>
+
+    <div id="panel-container">
+        <iframe id="myPanelFrame"
+                frameborder="0" src="ASpanel-master/toolbar/toolbar.html" height="100%" width="100%">
+        </iframe>
+    </div>
+
+    <div class="page-header">
+        <div class="col-lg-12">
+            <h1><a href="http://gridui.gpii.eu/">HdM Online Banking </a><small>Hochschule der Medien</small></h1>
+        </div>
+
+    </div>
+
+
+    <!-- ----------------------------------------NAVIGATION-------------------------------------------------- -->
+
+    <div id="NavigationMenu">
+        <div class="container">
+            <div class="col-xs-2 col-xs-offset-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <a class="btn btn-primary tababble" id="kontouebersichtMenu" tabindex="4" href="#kontouebersicht" aria-controls="kontouebersicht" role="tab" data-toggle="tab">Kontoübersicht</a>
+                    <a class="btn btn-primary tababble" id="girokontoMenu" tabindex="4" href="#girokonto" aria-controls="girokonto" role="tab" data-toggle="tab">Girokonto</a>
+                    <a class="btn btn-primary tababble" id="sparkontoMenu" tabindex="4" href="#sparkonto" aria-controls="sparkonto" role="tab" data-toggle="tab">Sparkonto</a>
+                </ul>
+            </div>
+            <div class="col-xs-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <a class="btn btn-primary tababble" id="ueberweisungMenu" tabindex="4" href="#ueberweisung" aria-controls="ueberweisung" role="tab" data-toggle="tab">Überweisung</a>
+                    <a class="btn btn-primary tababble" id="terminueberweisungMenu" tabindex="4" href="#terminueberweisung" aria-controls="terminueberweisung" role="tab" data-toggle="tab">Terminüberweisung</a>
+                    <a class="btn btn-primary tababble" id="dauerauftragMenu" tabindex="4" href="#dauerauftrag" aria-controls="dauerauftrag" role="tab" data-toggle="tab">Dauerauftrag</a>
+                </ul>
+            </div>
+            <div class="col-xs-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <a class="btn btn-primary tababble" id="kontodetailsMenu" tabindex="4" href="#kontodetails" aria-controls="kontodetails" role="tab" data-toggle="tab">Kontodetails</a>
+                    <a class="btn btn-primary tababble" id="kontoverwaltungMenu" tabindex="4" href="#kontoverwaltung" aria-controls="kontoverwaltung" role="tab" data-toggle="tab">Kontoverwaltung</a>
+                    <a class="btn btn-primary tababble" id="hilfeMenu" tabindex="4" aria-controls="hilfe" data-toggle="modal" data-target="#hilfeModal">Hilfe</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------CONTENT-------------------------------------------------- -->
+
+    <div id="content" class="container bank-content-wrapper">
+
+        <!-- ----------------------------------------Kontoübersicht-------------------------------------------------- -->
+
+        <div role="tabpanel" class="row tab-pane fade in active" id="kontouebersicht">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Kontoübersicht</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6 align-center border-right">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    Girokonto
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    4.828,02 EUR
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 align-center">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    Sparkonto
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    1.300,00 EUR
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 align-right">
+                            Gesamt 6.128,02 EUR
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------Girokonto-------------------------------------------------- -->
+        <div role="tabpanel" class="row tab-pane fade" id="girokonto">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Girokonto</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row" style="margin-bottom: 30px">
+                        <div class="col-xs-1 align-center">
+                            Datum
+                        </div>
+                        <div class="col-xs-1 align-center">
+                            Buchungsdatum
+                        </div>
+                        <div class="col-xs-6 align-center">
+                            Zweck
+                        </div>
+                        <div class="col-xs-2 align-center">
+                            Forderung
+                        </div>
+                        <div class="col-xs-2 align-center">
+                            Zahlung
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-1 align-center">
+                            1 DEC
+                        </div>
+                        <div class="col-xs-1 align-center">
+                            1 DEC
+                        </div>
+                        <div class="col-xs-6 align-center">
+                            LBV Baden-Württemberg
+                        </div>
+                        <div class="col-xs-2 align-center">
+                            1,750.00
+                        </div>
+                        <div class="col-xs-2 align-center">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------Sparkonto-------------------------------------------------- -->
+
+        <div role="tabpanel" class="row tab-pane fade" id="sparkonto">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Sparkonto</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row" style="margin-bottom: 30px">
+                        <div class="col-xs-1 align-center">
+                            Datum
+                        </div>
+                        <div class="col-xs-1 align-center">
+                            Buchungsdatum
+                        </div>
+                        <div class="col-xs-6 align-center">
+                            Zweck
+                        </div>
+                        <div class="col-xs-2 align-center">
+                            Forderung
+                        </div>
+                        <div class="col-xs-2 align-center">
+                            Zahlung
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-1 align-center">
+                            1 DEC
+                        </div>
+                        <div class="col-xs-1 align-center">
+                            1 DEC
+                        </div>
+                        <div class="col-xs-6 align-center">
+                            LBV Baden-Württemberg
+                        </div>
+                        <div class="col-xs-2 align-center">
+                            1,750.00
+                        </div>
+                        <div class="col-xs-2 align-center">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------Überweisung-------------------------------------------------- -->
+
+        <div role="tabpanel" class="row tab-pane fade" id="ueberweisung">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Überweisung</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12 align-center">
+                                <p><strong>Auftraggeber</strong></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 align-center">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <p>Max Mustermann</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 align-center border-right border-left">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputKonto">Konto</label>
+                                            <select class="form-control tababble" id="exampleInputKonto" tabindex="3">
+                                                <option id="dropdown1">Girokonto</option>
+                                                <option id="dropdown2">Sparkonto</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 align-center">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label>IBAN</label>
+                                            <p>DE43 5337 0024 0123 4567 00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-12 align-center">
+                                <p><strong>Zahlungsempfänger</strong></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 align-center border-right">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmpfaenger">Empfänger</label>
+                                            <input type="text" class="form-control tababble" id="exampleInputEmpfaenger" placeholder="Name" tabindex="3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 align-center border-right">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputIban">IBAN</label>
+                                            <input type="text" class="form-control tababble" id="exampleInputIban" placeholder="IBAN" tabindex="3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 align-center">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputBetrag">Betrag</label>
+                                            <input type="text" class="form-control tababble" id="exampleInputBetrag" placeholder="Betrag" tabindex="3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 align-center border-right">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputVerwendung">Verwendung</label>
+                                            <input type="text" class="form-control tababble" id="exampleInputVerwendung" placeholder="Verwendung" tabindex="3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 align-center border-right">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputAusfuehrung">Ausführung</label>
+                                            <input type="text" class="form-control tababble" id="exampleInputAusfuehrung" placeholder="tt.mm.jjjj" tabindex="3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 align-center">
+                                <button id="ueberweisungButton" type="button" class="btn btn-default tababble" data-toggle="modal" data-target="#myModal" tabindex="3">Übernehmen</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ----------------------------------------Terminüberweisung-------------------------------------------------- -->
+
+        <div role="tabpanel" class="row tab-pane fade" id="terminueberweisung">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Terminüberweisung</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div class="jumbotron">
+                        <h2>Diese Funktion ist leider noch nicht verfügbar.</h2>
+                        <br>
+                        <p>Mit der Terminüberweisung können Sie Ihre Überweisung im Voraus tätigen,
+                            die zu einem späteren Zeitpunkt erst ausgeführt wird.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ----------------------------------------Dauerauftrag-------------------------------------------------- -->
+
+        <div role="tabpanel" class="row tab-pane fade" id="dauerauftrag">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Dauerauftrag</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div class="jumbotron">
+                        <h2>Diese Funktion ist leider noch nicht verfügbar.</h2>
+                        <br>
+                        <p>Mit dem Dauerauftrag können Sie wiederkehrende Überweisungen durchführen.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------Kontodetails-------------------------------------------------- -->
+
+        <div role="tabpanel" class="row tab-pane fade" id="kontodetails">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Kontodetails</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6 align-center border-right">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p><strong>Inhaber</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    Max Mustermann
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 align-center">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p><strong>Eröffnet am</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    01.01.2017
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-4 align-center border-right">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p><strong>Girokonto</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    4.828,02 EUR
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 align-center border-right">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p><strong>IBAN</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    DE43 5337 0024 0123 4567 00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 align-center">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p><strong>Sparkonto</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    1.300,00 EUR
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------Kontoverwaltung-------------------------------------------------- -->
+
+
+        <div role="tabpanel" class="row tab-pane fade" id="kontoverwaltung">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Kontoverwaltung</h3>
+                </div>
+                <div class="panel-body">
+                    <p>Hier können Sie verschiedene Aspekte Ihres Kontos verwalten.</p>
+                    <div class="row">
+                        <div class="col-xs-12 align-center">
+                            <p>Wählen Sie Ihr Konto</p>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <select id="kontoverwaltungKonto" class="form-control tababble">
+                                    <option>Girokonto</option>
+                                    <option>Sparkonto</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-3 col-xs-offset-5">
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" class="tababble"> Gesperrt
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" class="tababble" checked> Entsperrt
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-3 col-xs-offset-8">
+                                <button id="kontoverwaltungButton" type="button" class="btn btn-primary tababble">Speichern</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Modal ------------------------------------------------>
+        <div class="modal fade" id="hilfeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="hilfeModalLabel">Hilfe</h4>
+                    </div>
+                    <div class="modal-body">
+                        Standardmäßig wird beim Start das One Button Scanning angewendet. Bei Aufrufen der Seite einfach die "Enter"<br><br>
+                        Taste betätigen. Das Scanning läuft automatisch ab und die gewünschten Punkte bei Markierung erneut mit der
+                        "Enter" Taste auswählen.<br><br>
+
+                        Voreinstellungen für das Scanning:<br><br>
+
+                        Scan Wiederholungen: 3 - Nach 3 Wiederholungen bricht das Scanning ab und muss erneut durch die "Enter" Taste
+                        aufgerufen werden. <br><br>
+
+                        Scan Geschwindigkeit: 1 Sekunde - Nach 1 Sekunde wird das nächste Element ausgewählt.<br><br>
+
+                        Scan Farbe: Orange<br><br>
+
+                        Das Scanningverhalten kann in der Toolbar verändert werden. Zusätzlich steht noch das Two Button Scanning
+                        zur Auswahl, welches aber noch in der <strong>Testphase</strong> ist.<br><br>
+
+                        Two Button Scanning:<br><br>
+
+                        - Leertaste: Nächstes Element manuell auswählen<br>
+                        - Enter: Element auswählen
+                    </div>
+                    <div class="modal-footer">
+                        <button id="hilfeButton" type="button" class="btn btn-default tababble" data-dismiss="modal" autofocus>Zurück</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------------------------------- Überweisungsauftrag ---------------------------------------------->
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Ihr Überweisungsauftrag</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>Name:</p>
+                            </div>
+                            <div class="col-xs-6">
+                                Max Mustermann
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>Konto:</p>
+                            </div>
+                            <input id="konto" class="col-xs-6" readonly="readonly" value="" tabindex="-1">
+
+                            </input>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>IBAN:</p>
+                            </div>
+                            <div class="col-xs-6">
+                                DE43 5337 0024 0123 4567 00
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>Empfänger:</p>
+                            </div>
+                            <input id="empfaenger" class="col-xs-6" readonly="readonly" value="" tabindex="-1">
+
+                            </input>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>IBAN:</p>
+                            </div>
+                            <input id="iban" class="col-xs-6" readonly="readonly" value="" tabindex="-1">
+
+                            </input>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>Betrag:</p>
+                            </div>
+                            <input type="text" readonly="readonly" id="betrag" class="col-xs-6" value="" tabindex="-1">
+
+                            </input>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>Verwendung:</p>
+                            </div>
+                            <input id="verwendung" class="col-xs-6" readonly="readonly" value="" tabindex="-1">
+
+                            </input>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>Ausführung:</p>
+                            </div>
+                            <input id="ausfuehrung" class="col-xs-6" readonly="readonly" value="" tabindex="-1">
+
+                            </input>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">
+                                <p>Tannummer</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <input id="tan" type="text" class="form-control tababble">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="absendenZurueck" type="button" class="btn btn-default tababble" data-dismiss="modal">Zurück</button>
+                        <button id="absenden" type="button" class="btn btn-primary tababble">Absenden</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="virtualKeyboard"></div>
+
+    </div>
+
+    <div id="scanFooter">
+        <p id="footerText">
+            Scanning:
+        </p>
+        <button tabindex="1" id="startStopButton" class="btn btn-default" autofocus>Start/Stop</button>
+        <button tabindex="1" id="zurueckButton" class="btn btn-default" disabled>Zurück</button>
+    </div>
+
+
+    <!-- Main JS -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+    <!-- onscreenKeyboard -->
+    <script type="text/javascript" src="onscreenkeyboard-master/js/jsKeyboard.js"></script>
+    <script src="onscreenkeyboard-master/js/main.js"></script>
+
+    <!-- ASpanel -->
+    <script type="text/javascript" src="ASpanel-master/js/libs/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="ASpanel-master/js/libs/jquery.mypanel.js"></script>
+    <script type="text/javascript" src="ASpanel-master/js/libs/jquery.tableofcontents.js"></script>
+    <script type="text/javascript" src="ASpanel-master/js/libs/jquery.res.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="ASpanel-master/js/libs/jquery.pictofy.min.js"></script>
+    <script type="text/javascript" src="ASpanel-master/js/functions/ASfunctions.js"></script>
+    <script type="text/javascript" src="ASpanel-master/toolbar/js/config.js"></script>
+
+    <script type="text/javascript">
+        var defaultTextStyle = null;
+        $(document).ready(function() {
+            $('#panel-container').mypanel({
+                tabText : ' Toolbar öffnen/schließen',
+                openByDefault : false
+            });
+            $('#panel-container').css({"border": "none"});
+            //defaultTextStyle = getDefaultTextStyle();
+        });
+    </script>
+
+    <!-- Scanning -->
+    <script type="text/javascript" src="Scanning/functions/init.js"></script>
+    <script type="text/javascript" src="Scanning/functions/scanLayer1.js"></script>
+    <script type="text/javascript" src="Scanning/functions/scanHeader.js"></script>
+    <script type="text/javascript" src="Scanning/functions/scanNavigation.js"></script>
+    <script type="text/javascript" src="Scanning/functions/twoButtonScanning.js"></script>
+    <script type="text/javascript" src="Scanning/functions/Content/scanUeberweisung.js"></script>
+    <script type="text/javascript" src="Scanning/functions/Content/scanKontoverwaltung.js"></script>
+    <script type="text/javascript" src="Scanning/functions/onscreenKeyboard/initKeyboard.js"></script>
+    <script type="text/javascript" src="Scanning/functions/onscreenKeyboard/scanKeyboard.js"></script>
+    <script type="text/javascript" src="Scanning/functions/onscreenKeyboard/scanKeyboardINSERT.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* header */
+
+.page-header {
+    color: #fff;
+    background-color: #E41C3B;
+    margin-top: 0px !important;
+    height: 69px;
+}
+.page-header small {
+    color: #fff;
+}
+
+.page-header > h1 {
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.page-header h1 a {
+    color: #fff;
+}
+.page-header h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-header .glyphicon {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.page-header button.btn.btn-default {
+    margin-top: 2px;
+}
+
+/* bank content */
+
+
+.bank-content-wrapper {
+    margin-top: 30px;
+}
+.bank-content {
+    padding: 30px 80px;
+}
+
+div.tab-pane {
+    width: inherit;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+
+.border-right {
+    border-right: 1px solid lightgrey;
+}
+.border-left {
+    border-left: 1px solid lightgrey;
+}
+
+.fade.in.active{
+    z-index: 100;
+    display: block;
+}
+.fade{
+    display: none;
+}
+
+ul a.btn.btn-primary {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.panel-default > .panel-heading {
+    background-color: #E41C3B !important;
+}
+h3.panel-title{
+    color: white;
+    font-size: 30px;
+}
+
+.ueberweisungRow1, .ueberweisungRow2, .ueberweisungRow3, .terminueberweisungRow1, .terminueberweisungRow2, .terminueberweisungRow3,
+.dauerauftragRow1, .dauerauftragRow2, .dauerauftragRow3{
+    height: 130px;
+}
+
+.col-xs-12 > .form-group {
+    margin-top: 25px;
+}
+
+#ueberweisungButton, #ueberweisungButton2, #ueberweisungButton3 {
+    margin-top: 46px;
+}
+
+/* ueberweisung */
+
+#ueberweisung, #terminueberweisung, #dauerauftrag {
+    margin-bottom: 50px;
+}
+
+
+
+
+/* scan button */
+
+
+
+#scanUeberweisungButton, #scanTerminueberweisungButton, #scanDauerauftragButton {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: 88px;
+    margin-bottom: 14px;
+    z-index: 1;
+}
+#scanUeberweisungWeiterButton {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: 153px;
+    margin-bottom: 14px;
+    z-index: 1;
+}
+
+#scanUeberweisungZurueckButton{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: 223px;
+    margin-bottom: 14px;
+    z-index: 1;
+}
+
+/* modal */
+
+div#myModal, div#hilfeModal {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-body input {
+    border: none;
+}
+
+#tan {
+    border: 1px solid #ccc !important;
+}

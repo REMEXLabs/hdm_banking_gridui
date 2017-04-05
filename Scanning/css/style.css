@@ -1,0 +1,44 @@
+.tan-numbers {
+    margin-top: -150px;
+    border: none !important;
+    z-index: 1100;
+}
+
+.visible-footer {
+    z-index: 1050;
+}
+
+/* footer */
+#scanFooter {
+    position: fixed;
+    bottom: 0%;
+    height: 40px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+#footerText {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 10px;
+}
+
+/* onscreen keyboard */
+
+#virtualKeyboard {
+    display: none;
+}
+
+#startStopButton {
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    margin-top: 3px;
+}
+#zurueckButton {
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: 3px;
+}
